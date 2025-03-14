@@ -26,7 +26,7 @@ namespace BetterDecorador
 
             else
             {
-                Decor();
+                Console.WriteLine(Decor());
 
                 return;
             }
