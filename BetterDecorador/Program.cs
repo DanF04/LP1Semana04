@@ -15,10 +15,22 @@ namespace BetterDecorador
         /// <param name="args">prints the method Decor using the user input in args</param>
         private static void Main(string[] args)
         {
-            char character = char.Parse(args[1]);
-            int number = int.Parse(args[2]);
 
-            Console.WriteLine(Decor(args[0],character,number));
+            if (args.Length == 3)
+            {
+                char character = char.Parse(args[1]);
+                int number = int.Parse(args[2]);
+
+                Console.WriteLine(Decor(args[0],character,number));
+            }
+
+            else
+            {
+                Decor();
+
+                return;
+            }
+            
         }
 
         /// <summary>
@@ -39,6 +51,10 @@ namespace BetterDecorador
             return $"{decs} {s} {decs}";
         }
 
+        /// <summary>
+        /// Method that adds to a string depending on the int number
+        /// </summary>
+        /// <returns>a specific text with a numbered chars on each side</returns>
         private static string Decor()
         {
             string s2 = "User did not specify args!";
