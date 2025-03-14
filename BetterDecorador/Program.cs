@@ -38,5 +38,20 @@ namespace BetterDecorador
 
             return $"{decs} {s} {decs}";
         }
+
+        private static string Decor()
+        {
+            string s2 = "User did not specify args!";
+            char dec2 = '=';
+            int space2 = 3;
+            string dec3 = "";
+
+            for (int i = 0; i<space2; i++)
+            {
+                dec3 += dec2;
+            }
+
+            return $"{dec3} {s2} {dec3}";
+        }
     }
 }
