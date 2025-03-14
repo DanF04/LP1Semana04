@@ -2,6 +2,10 @@
 
 namespace BetterDecorador
 {
+    /// <summary>
+    /// Using the method Decor that returns a string with a x number of chars in each side,
+    /// it prints in the main method, the user input in args, according to the variables needed
+    /// </summary>
     public class Program
     {
 
